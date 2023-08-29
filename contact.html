@@ -1,0 +1,316 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>NGO</title>
+    <!-- fevicon -->
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+    <!-- bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <!-- awesome-icon  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- owl-carousel  -->
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+        integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+        integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- style -->
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="css\theme.css">
+    <link rel="stylesheet" href="css\contact.css">
+    <script src="https://cdn.jsdelivr.net/npm/countup.js@2.0.7/dist/countUp.min.js"></script>
+
+</head>
+
+<body>
+    <nav class="">
+        <div class="container-fluid d-flex justify-content-between align-items-center nav">
+            <div>
+                <a class="" href="/"><img src="/img/logo.png" alt="" class=" logo-img"></a>
+            </div>
+            <div class="d-lg-flex d-none align-items-center gap-xxl-4 gap-2">
+                <div class="d-flex gap-xxl-3 gap-2">
+                    <a class="nav-link px-xl-3 px-2 fs-14 text-dark menu-link" aria-current="page" href="/">Home</a>
+                    <a class="nav-link px-xl-3 px-2 fs-14 text-dark menu-link" href="/work.html">OUR WORK</a>
+                    <a class="nav-link px-xl-3 px-2 fs-14 text-dark menu-link" href="/campaign.html">CAMPAIGN</a>
+                    <a class="nav-link px-xl-3 px-2 fs-14 text-dark menu-link" href="/gallery.html">GALLERY</a>
+
+                    <a class="nav-link px-xl-3 px-2 fs-14 text-dark menu-link" href="/about.html">ABOUT
+                        US</a>
+
+                    <a class="nav-link px-xl-3 px-2 fs-14 text-dark menu-link active-link" href="/contact.html">CONTACT
+                        US</a>
+                </div>
+                <a href="donation.html" class="nav-link">
+                    <button class="bg-yellow px-4 py-1 rounded-pill">Donate <img src="img\heart.png" height="15.5"
+                            alt="" class=""></button>
+                </a>
+            </div>
+            <div class="d-lg-none">
+                <button class="btn bg-yellow" onClick="showMenu()">
+                    <i class="fa-solid fa-bars"></i>
+                </button>
+            </div>
+        </div>
+        <div class="sidebar close position-fixed bg-yellow" id="sidebar">
+            <button onclick="hideMenu()" id="closeBtn" class="btn bg-yellow position-absolute end-0 me-4 mt-3"><i
+                    class="fa-solid fa-xmark fs-4"></i></button>
+            <div class="d-flex flex-column align-items-center gap-5 mt-5 pt-5 position-relative">
+                <div class="d-flex flex-column align-items-center gap-3">
+                    <a class="nav-link px-xl-3 px-2 fs-14 text-dark menu-link" aria-current="page" href="/">Home</a>
+                    <a class="nav-link px-xl-3 px-2 fs-14 text-dark menu-link" href="/work.html">OUR WORK</a>
+                    <a class="nav-link px-xl-3 px-2 fs-14 text-dark menu-link" href="/campaign.html">CAMPAIGN</a>
+                    <a class="nav-link px-xl-3 px-2 fs-14 text-dark menu-link" href="/gallery.html">GALLERY</a>
+
+                    <a class="nav-link px-xl-3 px-2 fs-14 text-dark menu-link" href="/about.html">ABOUT US</a>
+
+                    <a class="nav-link px-xl-3 px-2 fs-14 text-dark menu-link active-link" href="/contact.html">CONTACT
+                        US</a>
+                </div>
+                <button class="bg-yellow px-5 fs-20 py-1 rounded-pill position-fixed bottom-0 mb-5"><a
+                        href="/donation.html" class="nav-link h-100 w-100"> Donate <img src="img\heart.png"
+                            height="15.5" alt="" class=""></a></button>
+
+            </div>
+
+        </div>
+        <div class=" h-28 d-lg-flex justify-content-lg-between align-items-center bg-yellow px-lg-5 px-4">
+            <ul
+                class="d-flex align-items-center justify-content-lg-start justify-content-between gap-xl-4 gap-2 m-0 p-0 bg-yellow">
+                <li class="nav-link"><a href="" class="nav-link fs-12">Follow us</a></li>
+                <ul
+                    class="d-flex align-items-center justify-content-lg-start justify-content-end float-end gap-xl-4 gap-3 m-0 p-0">
+                    <li class="nav-link"><a href="" class="nav-link "><i class="fa-brands fa-facebook-f"></i></a>
+                    </li>
+                    <li class="nav-link"><a href="" class="nav-link "><i class="fa-brands fa-instagram"></i></a>
+                    </li>
+                    <li class="nav-link"><a href="" class="nav-link "><i class="fa-brands fa-twitter"></i></a></li>
+                    <li class="nav-link"><a href="" class="nav-link "><i class="fa-brands fa-linkedin-in"></i></a>
+                    </li>
+                </ul>
+            </ul>
+            <ul class="d-lg-flex d-none align-items-center gap-3 m-0">
+                <li class="nav-link"><a href="" class="nav-link"><img src="/img/email.png" alt="" height="12"
+                            class=""></a>
+                </li>
+                <li class="nav-link"><a href="mailto:info@akinofoundation.com" class="nav-link fs-12">
+                        info@akinofoundation.com </a></li>
+            </ul>
+        </div>
+        <div onclick="hideMenu()" class="overlay-menu"></div>
+    </nav>
+
+    <section>
+        <div>
+            <div class="position-relative d-flex align-items-center ">
+                <div class="walpaper-img position-absolute top-0">
+                    <img src="./img/image 10.png" alt="" class="position-absolute img-cover">
+                    <img src="https://plus.unsplash.com/premium_photo-1674769116099-d70d710ebb30?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8N3x8Y3V0ZSUyMGJhYnl8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=500&q=60"
+                        alt="" class="img-cover">
+                </div>
+            </div>
+            <div class="position-absolute user-form  w-100 ">
+
+                <div
+                    class="main-form d-flex flex-column mx-auto p-md-5 p-4 bg-white  col-lg-6  col-md-10 col-12 rounded-4">
+                    <form class="gradient-custom">
+                        <div class="row">
+                            <div class="col-md-6 mb-3">
+
+                                <div class="form-outline">
+                                    <label class="font-sm" for="Name">Name</label>
+                                    <input type="text" id="Name"
+                                        class="input-height input-background-color  form-control" />
+                                </div>
+                            </div>
+                            <div class="col-md-6 mb-3">
+
+                                <div class="form-outline">
+                                    <label class="font-sm" for="email">Email</label>
+                                    <input type="email" id="email"
+                                        class=" input-height input-background-color form-control" />
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-6 mb-3">
+                                <div class="form-outline">
+                                    <label class="font-sm" for="phone">Phone Number</label>
+                                    <input type="email" id="phone"
+                                        class="input-background-color input-height form-control" />
+                                </div>
+                            </div>
+                            <div class="col-md-6 mb-3">
+                                <div class="form-outline">
+                                    <label class="font-sm" for="location">Location</label>
+                                    <input type="tel" id="location"
+                                        class="input-background-color input-height form-control" />
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class=" mb-3">
+
+                                <div class="form-outline">
+                                    <label class="font-sm" for="subject">Subject</label>
+                                    <input type="email" id="subject"
+                                        class="input-background-color input-height form-control" />
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class=" mb-5">
+
+                                <div class="form-outline">
+                                    <label class="font-sm" for="massage">Massage</label>
+                                    <textarea class="textarea-height form-control input-background-color" name=""
+                                        id="massage" cols="30" rows="10"></textarea>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class=" mb-4">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" name="checkbox" id="exampleCheck"
+                                        value="option2">
+                                    <label class="form-check-label fs-15" for="exampleCheck">
+                                        By sharing your details, you agree to receive stories and updates from Akino
+                                        via mobile, Whatsapp,
+                                        landline, email and post. If you’d like to change this, please send us an
+                                        email on
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="mt-md-5 mt-3">
+                            <button
+                                class="border-0 rounded yellow-back-color input-height w-100 font-md">SUBMIT</button>
+                        </div>
+
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class=" map-section pt-xl-5 pt-md-5">
+
+        <div class="d-flex col-lg-8 col-11 position-relative mx-auto  mt-md-5  rounded-4 ">
+            <div class="">
+                <iframe class="w-100 position-absolute rounded-4" height="360" frameborder="0" scrolling="no"
+                    marginheight="0" marginwidth="0" id="gmap_canvas"
+                    src="https://maps.google.com/maps?width=520&amp;height=384&amp;hl=en&amp;q=Vatsala%20tai%20naik%20nagar%20chembur%20east%20mumbai%20Mumbai+(Address)&amp;t=&amp;z=12&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe>
+
+            </div>
+            <div class=" address-block position-absolute  yellow-back-color m-3 rounded-4 p-4">
+                <div class=" ">
+                    <h6 class="address-font">Address</h6>
+                    <p class="font-sm"> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed Lorem ipsum
+                        dolor sit Lorem ipsum dolor sit amet, </p>
+
+
+                </div>
+                <di class=" d-flex justify-content-end align-items-end pt-2">
+                    <img class="address-block-img" src="./img/addressimg.png" alt="" srcset="">
+                </di>
+            </div>
+        </div>
+
+
+
+        <div class=" contact-block d-md-flex gap-2 mx-auto col-lg-8 col-11 mb-5 pe-md-2 ">
+            <div
+                class="d-flex justify-content-between col-md-6 yellow-back-color p-3 ps-md-4 rounded-3 box-height me-md-2 mb-4 mb-md-0">
+                <div class=" ">
+                    <p class="font-sm m-0 ps-1">Mail Us</p>
+                    <a href="mailto:info@akinofoundation.com" class=" p-0 m-0 font-md nav-link">
+                        info@akinofoundation.com</a>
+                </div>
+                <div>
+                    <img class="mail-img" src="./img/massage.png" alt="">
+                </div>
+            </div>
+            <div class=" callus d-flex justify-content-between col-md-6 light-blue p-3 ps-md-4 rounded-3 box-height ">
+                <div class="text-body ">
+                    <p class="font-sm m-0 ps-1">Call Us</p>
+                    <a href="tel:+91 77777 77777" class="font-md p-0 m-0  nav-link"> +91 77777 77777</a>
+                </div>
+                <div>
+                    <img class="call-img" src="./img/callimg.png" alt="">
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+
+
+
+
+    <footer class="bg-dark">
+        <div class="px-md-5 px-2">
+            <div class="px-md-4 px-2 text-center d-flex justify-content-center align-items-center flex-column pt-5">
+                <a href="" class=""><img src="img/logo.png" height="51" alt="" class=""></a>
+                <ul
+                    class="gap-md-5 gap-4 ps-0 mt-5 d-flex justify-content-around col-lg-7 col-md-9 col-12 flex-wrap pb-4">
+                    <a href="/about.html" class="nav-link text-white fs-20 lh-1 fw-500">ABOUT US</a>
+                    <a href="/contact.html" class="nav-link text-white fs-20 lh-1 fw-500">CONTACT US</a>
+                    <a href="/campaign.html" class="nav-link text-white fs-20 lh-1 fw-500">CAMPAIGN</a>
+                    <a href="/work.html" class="nav-link text-white fs-20 lh-1 fw-500">OUR WORK</a>
+                    <a href="/gallery.html" class="nav-link text-white fs-20 lh-1 fw-500">GALLERY</a>
+                    <a href="/" class="nav-link text-white fs-20 lh-1 fw-500">HOME</a>
+                </ul>
+
+            </div>
+            <div
+                class="d-flex justify-content-md-between flex-md-row flex-column justify-content-center text-center border-top pt-2">
+                <span class="text-white fs-12 ">©copyrights 2021, DiviGas. All Rights Reserved</span>
+                <p class="text-white fs-12">Privacy Policy | Terms & Conditions</p>
+
+            </div>
+        </div>
+
+    </footer>
+
+
+
+
+
+
+    <!-- jquery -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"
+        integrity="sha512-3gJwYpMe3QewGELv8k/BX9vcqhryRdzRMxVfq6ngyWXwo03GFEzjsUm8Q7RZcHPHksttq7/GFoxjCVUjkjvPdw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <!-- owl-carousel  -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+        integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <script>
+
+
+
+
+
+    </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+        crossorigin="anonymous"></script>
+    <script src="js\script.js"></script>
+</body>
+
+</html>

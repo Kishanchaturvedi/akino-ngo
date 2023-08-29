@@ -1,0 +1,316 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>NGO</title>
+    <!-- fevicon -->
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+    <!-- bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <!-- awesome-icon  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- owl-carousel  -->
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+        integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+        integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- style -->
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/theme.css">
+    <link rel="stylesheet" href="css/campaign.css">
+    <script src="https://cdn.jsdelivr.net/npm/countup.js@2.0.7/dist/countUp.min.js"></script>
+</head>
+<style>
+    .top-25 {
+        top: 32%;
+    }
+
+    .bg-light-gray {
+        background: #F2F3F4;
+    }
+
+    #sticke-code {
+        position: sticky !important;
+        top: 5px;
+        right: 0 !important;
+        z-index: +100 !important;
+    }
+</style>
+
+<body>
+    <nav class="">
+        <div class="container-fluid d-flex justify-content-between align-items-center nav">
+            <div>
+                <a class="" href="/"><img src="/img/logo.png" alt="" class=" logo-img"></a>
+            </div>
+            <div class="d-lg-flex d-none align-items-center gap-xxl-4 gap-2">
+                <div class="d-flex gap-xxl-3 gap-2">
+                    <a class="nav-link px-xl-3 px-2 fs-14 text-dark menu-link" aria-current="page" href="/">Home</a>
+                    <a class="nav-link px-xl-3 px-2 fs-14 text-dark menu-link" href="/work.html">OUR WORK</a>
+                    <a class="nav-link px-xl-3 px-2 fs-14 text-dark menu-link active-link"
+                        href="/campaign.html">CAMPAIGN</a>
+                    <a class="nav-link px-xl-3 px-2 fs-14 text-dark menu-link" href="/gallery.html">GALLERY</a>
+
+                    <a class="nav-link px-xl-3 px-2 fs-14 text-dark menu-link" href="/about.html">ABOUT US</a>
+
+                    <a class="nav-link px-xl-3 px-2 fs-14 text-dark menu-link" href="/contact.html">CONTACT US</a>
+                </div>
+                <a href="/donation.html" class="nav-link">
+                    <button class="bg-yellow px-4 py-1 rounded-pill">Donate <img src="img\heart.png" height="15.5"
+                            alt="" class=""></button></a>
+            </div>
+            <div class="d-lg-none">
+                <button class="btn bg-yellow" onClick="showMenu()">
+                    <i class="fa-solid fa-bars"></i>
+                </button>
+            </div>
+        </div>
+        <div class="sidebar close position-fixed bg-yellow" id="sidebar">
+            <button onclick="hideMenu()" id="closeBtn" class="btn bg-yellow position-absolute end-0 me-4 mt-3"><i
+                    class="fa-solid fa-xmark fs-4"></i></button>
+            <div class="d-flex flex-column align-items-center gap-5 mt-5 pt-5 position-relative">
+                <div class="d-flex flex-column align-items-center gap-3">
+                    <a class="nav-link px-xl-3 px-2 fs-14 text-dark menu-link" aria-current="page" href="/">Home</a>
+                    <a class="nav-link px-xl-3 px-2 fs-14 text-dark menu-link" href="/work.html">OUR WORK</a>
+                    <a class="nav-link px-xl-3 px-2 fs-14 text-dark menu-link active-link"
+                        href="/campaign.html">CAMPAIGN</a>
+                    <a class="nav-link px-xl-3 px-2 fs-14 text-dark menu-link" href="/gallery.html">GALLERY</a>
+
+                    <a class="nav-link px-xl-3 px-2 fs-14 text-dark menu-link" href="/about.html">ABOUT US</a>
+
+                    <a class="nav-link px-xl-3 px-2 fs-14 text-dark menu-link" href="/contact.html">CONTACT US</a>
+                </div>
+                    <button class="bg-yellow px-5 fs-20 py-1 rounded-pill position-fixed bottom-0 mb-5"><a href="/donation.html" class="nav-link h-100 w-100"> Donate <img
+                            src="img\heart.png" height="15.5" alt="" class=""></a></button>
+
+            </div>
+
+        </div>
+        <div class=" h-28 d-lg-flex justify-content-lg-between align-items-center bg-yellow px-lg-5 px-4">
+            <ul
+                class="d-flex align-items-center justify-content-lg-start justify-content-between gap-xl-4 gap-2 m-0 p-0 bg-yellow">
+                <li class="nav-link"><a href="" class="nav-link fs-12">Follow us</a></li>
+                <ul
+                    class="d-flex align-items-center justify-content-lg-start justify-content-end float-end gap-xl-4 gap-3 m-0 p-0">
+                    <li class="nav-link"><a href="" class="nav-link "><i class="fa-brands fa-facebook-f"></i></a>
+                    </li>
+                    <li class="nav-link"><a href="" class="nav-link "><i class="fa-brands fa-instagram"></i></a>
+                    </li>
+                    <li class="nav-link"><a href="" class="nav-link "><i class="fa-brands fa-twitter"></i></a></li>
+                    <li class="nav-link"><a href="" class="nav-link "><i class="fa-brands fa-linkedin-in"></i></a>
+                    </li>
+                </ul>
+            </ul>
+            <ul class="d-lg-flex d-none align-items-center gap-3 m-0">
+                <li class="nav-link"><a href="" class="nav-link"><img src="/img/email.png" alt="" height="12"
+                            class=""></a>
+                </li>
+                <li class="nav-link"><a href="mailto:" class="nav-link fs-12"> info@akinofoundation.com </a></li>
+            </ul>
+        </div>
+        <div onclick="hideMenu()" class="overlay-menu"></div>
+    </nav>
+
+
+    <!-- <div class="container-fluid"> -->
+    <div class=" hero position-relative">
+        <div class="container">
+            <div class="d-flex justify-content-lg-around flex-lg-row flex-column-reverse">
+                <div class="col-lg-6 pt-15">
+                    <div class="col-xl-8 col-lg-10 col-12 my-md-5 mt-5 pt-lg-5 pb-5 d-lg-block d-none">
+                        <p class="title-txt text-uppercase">
+                            <span class=" text-start">Lorem ipsum dolor</span><span class="span-txt"> sit amet</span>
+                        </p>
+                        <p class="extra-txt text-uppercase">
+                            In the late-end of July, 2018, severe flooding affected the Indian state of Kerala due to
+                            sudden
+                            unusual high rainfall during the monsoon season. It was the worst flooding in Kerala in
+                            almost a
+                            century.
+                        </p>
+                    </div>
+
+
+                    <p class="fs-15 pb-5 pt-lg-5 pt-4 mt-lg-5 mb-3">In the late-end of July, 2018, severe flooding
+                        affected the
+                        Indian state
+                        of
+                        Kerala due to
+                        sudden
+                        unusual high rainfall during the monsoon season. It was the worst flooding in Kerala in
+                        almost a
+                        century. Nearly, 400 people died within half a month, while at least 4.5 lakh people were
+                        evacuated. All 14 districts of the state were placed on high alert. According to the Kerala
+                        Government, one-eighth of the total population of Kerala had been directly affected by the
+                        floods and related incidents. The Union Government declared this devastation on the Level 3
+                        Calamity or ‘Calamity of a severe nature
+                    </p>
+                    <div>
+                        <img src="/img/upload.png" class="my-2 border" id="main">
+                    </div>
+                    <div id="thumbnails" class="d-flex flex-wrap mt-4">
+                        <img class="col-3" src="https://source.unsplash.com/ufFIweqSPd4/800x800">
+                        <img class="col-3" src="/img/upload.png">
+                        <img class="col-3" src="/img/upload.png">
+                        <img class="col-3" src="/img/upload.png">
+                        <img class="col-3" src="/img/upload.png">
+                        <img class="col-3" src="/img/upload.png">
+                        <img class="col-3" src="https://source.unsplash.com/pV5ckb2HEVk/800x800">
+                        <img class="col-3" src="https://source.unsplash.com/pV5ckb2HEVk/800x800">
+                    </div>
+                </div>
+                <div class="col-lg-5 pt-lg-1 pt-5 mt-8">
+                    <div class="col-md-10 col-12 my-md-5 mt-5 pt-lg-5 pb-5 d-lg-none d-block">
+                        <p class="fs-50 lh-1 fw-700 text-uppercase text-white">
+                            <span class=" text-start">Lorem ipsum dolor</span><span class="span-txt"> sit amet</span>
+                        </p>
+                        <p class="extra-txt text-uppercase text-white">
+                            In the late-end of July, 2018, severe flooding affected the Indian state of Kerala due to
+                            sudden
+                            unusual high rainfall during the monsoon season. It was the worst flooding in Kerala in
+                            almost a
+                            century.
+                        </p>
+                    </div>
+                    <div id="" class="my-2 px-0 border rounded-3 bg-white position-sticky top-0 ">
+                        <div class="">
+                            <div class="d-flex flex-column gap-2 justify-content-center mt-2 p-md-4 p-2">
+                                <div class="d-flex justify-content-center align-items-center flex-column gap-2">
+                                    <div class="t-txt text-center">SUPPORT THE CAUSE</div>
+                                    <p
+                                        class="bg-yellow lazyMonday  col-lg-8 col-md-10 col-12  rounded text-center p-2 ">
+                                        MAKE A DIFFERENCE</p>
+                                </div>
+                                <div class="col-12 ">
+                                    <div class="mt-3 d-flex justify-content-between">
+                                        <p class="amt m-0 col d-flex  justify-content-start">₹90,560</p>
+                                        <p class="des m-0 col-md-auto d-flex align-items-end">Raised of ₹2,00,000 goal
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class=" col-12">
+                                    <div class="">
+                                        <div class="progress">
+                                            <div class="progress-bar" role="progressbar"
+                                                style="width: 25% ;border-radius: 1.5625rem; background: var(--primary-primary, #F9CA3E);"
+                                                aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class=" col-12 ">
+                                    <div class="">
+                                        <div class="col"><img src="🦆 emoji sparkling heart.svg" width="25"
+                                                alt=""><span>
+                                                <img src="/img/hurt.png" height="21" alt="" class=" pe-2">15,652
+                                                supporter's</span></div>
+                                    </div>
+                                </div>
+
+                                <div class="input-group mt-2 bg-light-gray rounded">
+                                    <span class="input-group-text bg-light-gray border-0 py-2 fw-600 fs-18"
+                                        id="basic-addon1">RS.</span>
+                                    <input type="text" class="form-control bg-light-gray border-0"
+                                        placeholder="Custome Amount" aria-label="Username"
+                                        aria-describedby="basic-addon1">
+                                </div>
+                                <div class="row px-2">
+                                    <div class="col-3 p-1"> <button
+                                            class="border-0 py-2  rounded bg-light-gray fw-500 fs-15 w-100">Rs.1000</button>
+                                    </div>
+                                    <div class="col-3 p-1"> <button
+                                            class="border-0 py-2  rounded bg-light-gray fw-500 fs-15 w-100">Rs.1000</button>
+                                    </div>
+                                    <div class="col-3 p-1"> <button
+                                            class="border-0 py-2  rounded bg-light-gray fw-500 fs-15 w-100">Rs.1000</button>
+                                    </div>
+                                    <div class="col-3 p-1"> <button
+                                            class="border-0 py-2  rounded bg-light-gray fw-500 fs-15 w-100">Rs.1000</button>
+                                    </div>
+                                    <div class="col-3 p-1"> <button
+                                            class="border-0 py-2  rounded bg-light-gray fw-500 fs-15 w-100">Rs.1000</button>
+                                    </div>
+                                    <div class="col-3 p-1"> <button
+                                            class="border-0 py-2  rounded bg-light-gray fw-500 fs-15 w-100">Rs.1000</button>
+                                    </div>
+                                    <div class="col-3 p-1"> <button
+                                            class="border-0 py-2  rounded bg-light-gray fw-500 fs-15 w-100">Rs.1000</button>
+                                    </div>
+                                    <div class="col-3 p-1"> <button
+                                            class="border-0 py-2  rounded bg-light-gray fw-500 fs-15 w-100">Rs.1000</button>
+                                    </div>
+                                </div>
+                                <p class="fs-15 py-md-3 text-justify">"YOUR CONTRIBUTIONS ARE ELIGIBLE FOR UPTO 50% TAX
+                                    BENEFIT UNDER SECTION 80G AS SMILE FOUNDATION IS REGISTERED AS NON PROFIT
+                                    ORGANIZATION"PAN: AACTS7973G | 80G NUMBER: AACTS7973GF20210</p>
+                                <a href="donation.html" class="bg-yellow w-100 nav-link py-3 rounded px-4  fs-20"><span
+                                        class="fw-600 ">DONATE NOW</span> <i
+                                        class="fa-solid fa-arrow-right float-end fs-4"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <footer class="bg-dark">
+            <div class="px-md-5 px-2">
+                <div class="px-md-4 px-2 text-center d-flex justify-content-center align-items-center flex-column pt-5">
+                    <a href="" class=""><img src="img/logo.png" height="51" alt="" class=""></a>
+                    <ul
+                        class="gap-md-5 gap-4 ps-0 mt-5 d-flex justify-content-around col-lg-7 col-md-9 col-12 flex-wrap pb-4">
+                        <a href="/about.html" class="nav-link text-white fs-20 lh-1 fw-500">ABOUT US</a>
+                        <a href="/contact.html" class="nav-link text-white fs-20 lh-1 fw-500">CONTACT US</a>
+                        <a href="/campaign.html" class="nav-link text-white fs-20 lh-1 fw-500">CAMPAIGN</a>
+                        <a href="/work.html" class="nav-link text-white fs-20 lh-1 fw-500">OUR WORK</a>
+                        <a href="/gallery.html" class="nav-link text-white fs-20 lh-1 fw-500">GALLERY</a>
+                        <a href="/" class="nav-link text-white fs-20 lh-1 fw-500">HOME</a>
+                    </ul>
+
+                </div>
+                <div
+                    class="d-flex justify-content-md-between flex-md-row flex-column justify-content-center text-center border-top pt-2">
+                    <span class="text-white fs-12 ">©copyrights 2021, DiviGas. All Rights Reserved</span>
+                    <p class="text-white fs-12">Privacy Policy | Terms & Conditions</p>
+
+                </div>
+            </div>
+        </footer>
+    </div>
+    </div>
+    <!-- </div> -->
+    <!-- </div> -->
+
+    <!-- </div> -->
+
+
+    <script>
+        var thumbnails = document.getElementById("thumbnails")
+        var imgs = thumbnails.getElementsByTagName("img")
+        var main = document.getElementById("main")
+        var counter = 0;
+
+        for (let i = 0; i < imgs.length; i++) {
+            let img = imgs[i]
+
+
+            img.addEventListener("click", function () {
+                main.src = this.src
+            })
+
+        }
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbg rkm"
+        crossorigin="anonymous"></script>
+    <script src="/js/script.js"></script>
+
+</body>
+
+</html

@@ -1,0 +1,34 @@
+.top-10 {
+    top: 30%;
+    right: 5%;
+}
+
+.bg-light-gray {
+    background: #F2F3F4;
+}
+
+.mt-12 {
+    margin-top: 12rem;
+}
+
+/* meadia  */
+@media(max-width:991.98px) {
+    .top-10 {
+        right: auto;
+    }
+
+    .mt-12 {
+        margin-top: 4rem;
+    }
+
+}
+@media(max-width:767.98px) {
+    .top-10 {
+        right: auto;
+    }
+
+    .mt-12 {
+        margin-top: 12rem;
+    }
+
+}
